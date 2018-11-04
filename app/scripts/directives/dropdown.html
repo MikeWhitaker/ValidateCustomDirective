@@ -2,7 +2,7 @@
     <div class="col-md-8">
         <div>
             <label for="cuisine">Favorite cuisine?</label>
-            <select name="cuisine" id="cuisine" ng-required="{{requiredParamExists}}" ng-model="cuisine">
+            <select name="cuisine" id="cuisine" ng-required="{{requiredParamExists}}" ng-model="customModel">
                 <option></option>
                 <option>Indian</option>
                 <option>German</option>
@@ -10,11 +10,11 @@
                 <option>Thai</option>
             </select>
         </div>
-        <div ng-show="{{modelValue.$modelValue}}" class="col-md-4">
-            <span>Error!</span>
+        <div ng-hide="getCustomModel()" class="col-md-4">
+            Error!
         </div>
-        <pre>
-                {{modelValue | json}}
-        </pre>
+        <!-- <pre>
+                {{customModel | json}}
+        </pre> -->
     </div>
 </div>
