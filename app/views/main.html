@@ -16,7 +16,9 @@
         <input type="url" id="website" name="website" placeholder="Website" ng-model="model.user.website">
       </div>
       <div>
-        <dropdown name="dropdown" ng-model='profileForm.cuisine' requiredParam></dropdown>
+        <div forminput>
+          <dropdown name="dropdown" ng-model='cuisine' require-validation></dropdown>
+        </div>
       </div>
     </form>
 

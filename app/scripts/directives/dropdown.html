@@ -10,8 +10,11 @@
                 <option>Thai</option>
             </select>
         </div>
-        <div ng-hide="{{$valid}}" class="col-md-4">
+        <div ng-show="{{modelValue.$modelValue}}" class="col-md-4">
             <span>Error!</span>
         </div>
+        <pre>
+                {{modelValue | json}}
+        </pre>
     </div>
 </div>
