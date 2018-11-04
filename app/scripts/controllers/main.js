@@ -9,9 +9,6 @@
  */
 angular.module('formValidateDirectiveApp')
   .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+   var vm = this;
+   vm.aModel = 'this variable has a value';
   });

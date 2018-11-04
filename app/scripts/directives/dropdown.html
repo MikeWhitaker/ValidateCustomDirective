@@ -1,10 +1,17 @@
-<div>
-    <label for="cuisine">Favorite cuisine?</label>
-    <select name="cuisine" id="cuisine" ng-model="model.user.cuisine">
-        <option></option>
-        <option>Indian</option>
-        <option>German</option>
-        <option>Mexican</option>
-        <option>Thai</option>
-    </select>
+<div class="row">
+    <div class="col-md-8">
+        <div>
+            <label for="cuisine">Favorite cuisine?</label>
+            <select name="cuisine" id="cuisine" ng-required="{{requiredParamExists}}" ng-model="cuisine">
+                <option></option>
+                <option>Indian</option>
+                <option>German</option>
+                <option>Mexican</option>
+                <option>Thai</option>
+            </select>
+        </div>
+        <div ng-hide="{{$valid}}" class="col-md-4">
+            <span>Error!</span>
+        </div>
+    </div>
 </div>
